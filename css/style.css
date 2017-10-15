@@ -1,0 +1,245 @@
+html, body {
+  overflow-x: hidden;
+}
+body{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #685C79;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 54.4px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+}
+p {
+  font-size: 14px;
+  line-height: 25.6px;
+  font-weight: 600;
+}
+
+
+/* Hero */
+
+.hero {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  position: relative;
+  height: 680px;
+  overflow:hidden;
+  background: url('../assets/hero-graph.png') bottom left no-repeat;
+  background-size: 1020px;
+}
+
+.hero-info {
+  width: 190px;
+  margin: 20px 0 0 15%;
+}
+
+.hero-info h4 {
+  margin-bottom: 15px;
+}
+
+.hero-info h5 {
+  margin-bottom: 40px;
+}
+
+.logo {
+  margin-bottom: 10px;
+  width: 51px;
+}
+
+.hero-info h5 {
+  color: rgba(104, 92, 121, .8);
+  margin-top: -10px;
+}
+
+.button {
+  height: 32px;
+  width: 128px;
+  position: relative;
+  background-color: #685C79;
+  margin-top: 40px;
+  padding: 11px 28px 11px 28px;
+  font-size: 12px;
+  color:#fff;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+#mobile-hero-phone-img {
+  width: 180px;
+  margin-top: 54px;
+  margin-left: -5px;
+}
+
+/* Stats Section */
+
+.stats-section {
+  width: 100%;
+  height: 920px;
+  float: left;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 150;
+  clear: both;
+  text-align: center;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 40px auto 0 auto;
+}
+
+#screen-time-circle {
+  border: 8px solid #EC7263;
+  background: linear-gradient(to top, rgba(237, 114, 99, .4) 50%, transparent 50%);
+}
+
+#app-opens-circle {
+  border: 8px solid #FEBC98;
+  background: linear-gradient(to top, rgba(254, 188, 152, .4) 40%, transparent 40%);
+}
+
+#app-spending-circle {
+  border: 8px solid #B7C4EE;
+  background: linear-gradient(to top, rgba(183, 196, 238, .4) 30%, transparent 30%);
+}
+
+.stats-section h4 {
+  margin: 20px auto 20px;
+}
+
+#screen-time {
+    color: #EC7263;
+}
+
+#app-opens {
+    color: #FEBC98;
+}
+
+#app-spending {
+    color: #B7C4EE;
+}
+
+.stats-section p {
+  color: rgba(24, 16, 25, .7);
+  margin: 0 10%;
+}
+
+
+/* goals section */
+
+.goals-section {
+  width: 100%;
+  height: 870px;
+  float: left;
+  position: relative;
+  background-color: #f8f9fa;
+  clear: both;
+  text-align: center;
+}
+
+.goals-section h4 {
+  margin: 40px auto 20px;
+  color: #685c79;
+}
+
+.goals-section p {
+    color: rgba(24, 16, 25, .7);
+    margin: 0 10%;
+}
+
+#mobile-alerts-phone-img {
+  width: 200px;
+  margin: 40px auto 60px;
+  position: relative;
+  z-index: 75;
+}
+
+#goals-graph {
+  width: 1020px;
+  margin-top: -380px;
+  position: relative;
+  z-index: 50;
+}
+
+/* testimonials section */
+
+.testimonials-section {
+  width: 100%;
+  height: 500px;
+  float: left;
+  position: relative;
+  background-color: #ffffff;
+  clear: both;
+  text-align: center;
+}
+
+#testimonial-photo {
+  width: 125px;
+  margin: 40px auto 20px;
+}
+
+#testimonial-arrow {
+  width: 14px;
+}
+
+#five-star-rating {
+  width: 160px;
+}
+
+.testimonials-section p {
+  color: #685c79;
+  margin: 20px 50px 40px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 420px;
+  float: left;
+  position: relative;
+  background-color: #685c79;
+}
+
+.footer-info {
+  text-align: left;
+  margin: 60px auto 60px 15%;
+}
+
+.footer h4 {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+#footer-logo {
+  margin: 0 auto 60px 15%;
+  width: 192px;
+}
