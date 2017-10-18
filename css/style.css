@@ -34,7 +34,6 @@ p {
   font-weight: 600;
 }
 
-
 /* Hero */
 
 .hero {
@@ -44,9 +43,12 @@ p {
   float: left;
   position: relative;
   height: 680px;
-  overflow:hidden;
-  background: url('../assets/hero-graph.png') bottom left no-repeat;
-  background-size: 1020px;
+}
+
+#hero-graph {
+  position:absolute;
+  top: 35%;
+  z-index:-1;
 }
 
 .hero-info {
@@ -72,7 +74,7 @@ p {
   margin-top: -10px;
 }
 
-.button {
+.mobile-button {
   height: 32px;
   width: 128px;
   position: relative;
@@ -87,17 +89,104 @@ p {
   z-index: 100;
 }
 
+.button {
+  visibility: hidden;
+}
+
 #mobile-hero-phone-img {
   width: 180px;
   margin-top: 54px;
   margin-left: -5px;
 }
 
+
+@media (min-width: 768px) {
+  .hero {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    position: relative;
+    height: 600px;
+  }
+  .hero-info {
+    width: 75%;
+    margin: 20px auto 0 auto;
+  }
+  .hero-info h4 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 100px;
+    margin-left: 50%
+  }
+  .hero-info h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50%;
+    line-height: 35px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .mobile-button {
+    visibility: hidden;
+  }
+  .button {
+    visibility: visible;
+    float: right;
+    background-color: #685C79;
+    padding: 14px 40px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  #mobile-hero-phone-img {
+    width: 250px;
+    margin-top: -270px;
+    margin-left: -5px;
+    float: left;
+  }
+  .hero-info h4 {
+    margin-bottom: 15px;
+  }
+  .hero-info h5 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1058px) {
+  #mobile-hero-phone-img {
+    margin-top: -225px;
+  }
+  .hero-info h4 {
+    margin-left: 390px;
+  }
+  .hero-info h5 {
+    margin-left: 390px;
+  }
+}
+
+@media (min-width: 1138px) {
+  #mobile-hero-phone-img {
+    margin-top: -190px;
+  }
+}
+
+@media (min-width: 1450px) {
+  #mobile-hero-phone-img {
+    margin-top: -182px;
+    width: 270px
+  }
+}
+
+
 /* Stats Section */
 
 .stats-section {
   width: 100%;
-  height: 920px;
+  height: 965px;
   float: left;
   position: relative;
   background-color: #ffffff;
@@ -116,6 +205,22 @@ p {
 #screen-time-circle {
   border: 8px solid #EC7263;
   background: linear-gradient(to top, rgba(237, 114, 99, .4) 50%, transparent 50%);
+}
+
+.stat {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 10px;
+  color: #030303;
+  margin: 15px auto 5px !important;
+}
+
+.stat-description {
+  font-family: "Open-Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #030303;
 }
 
 #app-opens-circle {
@@ -149,17 +254,57 @@ p {
   margin: 0 10%;
 }
 
+.circle-text p {
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .one-third {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
+  .stats-section {
+    height: 480px;
+  }
+  .circle {
+    margin-top: 60px;
+  }
+  .stats-section .button {
+    margin: 60px auto;
+  }
+  .circle-text {
+    margin-top: 30px;
+  }
+  .circle-text p {
+    margin-bottom: -10px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .circle-text h4 {
+    font-size: 26px;
+  }
+}
+
 
 /* goals section */
 
 .goals-section {
   width: 100%;
-  height: 870px;
+  height: 880px;
   float: left;
   position: relative;
   background-color: #f8f9fa;
   clear: both;
   text-align: center;
+  overflow: hidden;
+}
+
+.goals-info {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .goals-section h4 {
@@ -180,22 +325,80 @@ p {
 }
 
 #goals-graph {
-  width: 1020px;
-  margin-top: -380px;
-  position: relative;
+  margin-top: -565px;
+  position: absolute;
+  float: left;
   z-index: 50;
+}
+
+@media (min-width: 768px) {
+  .one-half {
+    width: 50%;
+    }
+  .goals-info {
+    text-align: left;
+    margin: 0 auto;
+    width: 75%;
+  }
+  .goals-section h4 {
+    font-size: 26px;
+    margin-top: 100px;
+  }
+  .goals-section p {
+    margin-bottom: -10px;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .goals-info a {
+    clear: both;
+    float: left;
+    margin-top: 40px;
+  }
+  #mobile-alerts-phone-img {
+    width: 260px;
+    float: right;
+    margin: -244px 0 0 0;
+  }
+  #goals-graph {
+    width: 100%;
+    margin-top: -507px;
+    position: relative;
+    z-index: 50;
+  }
+}
+
+@media (min-width: 992px) {
+
+
+}
+@media (min-width: 1200px) {
+
 }
 
 /* testimonials section */
 
 .testimonials-section {
   width: 100%;
-  height: 500px;
+  height: 420px;
   float: left;
   position: relative;
   background-color: #ffffff;
   clear: both;
   text-align: center;
+}
+
+.testimonials-info-div {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.testimonials-arrow-div {
+  float: right;
+  clear: both;
+  display: inline-block;
 }
 
 #testimonial-photo {
@@ -204,6 +407,7 @@ p {
 }
 
 #testimonial-arrow {
+  margin-top: 191px;
   width: 14px;
 }
 
@@ -213,14 +417,42 @@ p {
 
 .testimonials-section p {
   color: #685c79;
-  margin: 20px 50px 40px;
+  margin: 20px 0 40px;
 }
+
+@media (min-width: 768px) {
+  .testimonials-section {
+    height: 360px;
+  }
+  .testimonials-info-div {
+    text-align: left;
+    margin-top: 90px;
+  }
+  #testimonial-photo {
+    width: 180px;
+    float: left;
+    margin: auto 40px auto 0;
+  }
+  #five-star-rating {
+    margin-top: 12px;
+  }
+  .testimonials-section p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #testimonial-arrow {
+    margin-top: 155px;
+    margin-right: 80px;
+    width: 20px;
+  }
+}
+
 
 /* footer */
 
 .footer {
   width: 100%;
-  height: 420px;
+  height: 430px;
   float: left;
   position: relative;
   background-color: #685c79;
@@ -242,4 +474,27 @@ p {
 #footer-logo {
   margin: 0 auto 60px 15%;
   width: 192px;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    height: 160px;
+  }
+  .footer-info {
+    width: 63%;
+    float: left;
+    margin: 77px 0 0;
+  }
+  .footer h4 {
+    display: inline;
+    margin: auto 40px auto 0;
+  }
+  #footer-text {
+    margin-left: 15%;
+  }
+  #footer-logo {
+    float: right;
+    margin: 40px 40px 0 0;
+    width: 220px;
+  }
 }
