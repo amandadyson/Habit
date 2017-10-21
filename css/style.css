@@ -4,6 +4,7 @@ html, body {
 body{
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #685C79;
+  margin:0;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -154,6 +155,16 @@ p {
   .hero-info h5 {
     margin-bottom: 40px;
   }
+  #graph-image {
+    width: 100%;
+    margin-top: 8%;
+  }
+}
+
+@media (min-width: 1042px) {
+  #mobile-hero-phone-img {
+    margin-top: -225px;
+  }
 }
 
 @media (min-width: 1058px) {
@@ -168,16 +179,25 @@ p {
   }
 }
 
-@media (min-width: 1138px) {
+@media (min-width: 1122px) {
   #mobile-hero-phone-img {
-    margin-top: -190px;
+    margin-top: -222px;
+    width: 270px;
+  }
+  #graph-image {
+    margin-top: 2%;
   }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1138px) {
   #mobile-hero-phone-img {
-    margin-top: -182px;
-    width: 270px
+    margin-top: -220px;
+  }
+}
+
+@media (min-width: 1434px) {
+  #mobile-hero-phone-img {
+    margin-top: -178px;
   }
 }
 
@@ -186,7 +206,7 @@ p {
 
 .stats-section {
   width: 100%;
-  height: 965px;
+  padding-bottom: 80px;
   float: left;
   position: relative;
   background-color: #ffffff;
@@ -255,30 +275,55 @@ p {
 }
 
 .circle-text p {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-
 @media (min-width: 768px) {
+  /*
+
+  timeline circle & line do not stay centered using %s
+
+  .stats-section:before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 6px solid #685c79;
+    border-radius: 100%;
+    top: -150px;
+    left: 49.3%;
+  }
+  .stats-section:after {
+    content: " ";
+    position: absolute;
+    width: 6px;
+    background-color: #685c79;
+    height: 192px;
+    top: -132px;
+    left: 49.8;
+  }
+  */
+
   .one-third {
     display: inline-block;
     width: 30%;
     vertical-align: top;
   }
   .stats-section {
-    height: 480px;
+    padding-bottom: 60px;
   }
   .circle {
     margin-top: 60px;
   }
   .stats-section .button {
     margin: 60px auto;
+    float: none;
   }
   .circle-text {
     margin-top: 30px;
   }
   .circle-text p {
-    margin-bottom: -10px;
+    margin-bottom: 50px;
     font-size: 16px;
     line-height: 30px;
   }
@@ -292,7 +337,7 @@ p {
 
 .goals-section {
   width: 100%;
-  height: 880px;
+  padding-bottom: 80px;
   float: left;
   position: relative;
   background-color: #f8f9fa;
@@ -319,7 +364,7 @@ p {
 
 #mobile-alerts-phone-img {
   width: 200px;
-  margin: 40px auto 60px;
+  margin: 40px auto 70px;
   position: relative;
   z-index: 75;
 }
@@ -332,8 +377,14 @@ p {
 }
 
 @media (min-width: 768px) {
+  .goals-section {
+    padding-bottom: 0px;
+  }
   .one-half {
     width: 50%;
+    float: left;
+    position: relative;
+    z-index: 5;
     }
   .goals-info {
     text-align: left;
@@ -358,29 +409,21 @@ p {
   #mobile-alerts-phone-img {
     width: 260px;
     float: right;
-    margin: -244px 0 0 0;
+    margin: 73px 0 0 0;
   }
   #goals-graph {
     width: 100%;
-    margin-top: -507px;
+    margin-top: -653px;
     position: relative;
-    z-index: 50;
+    z-index: 0;
   }
-}
-
-@media (min-width: 992px) {
-
-
-}
-@media (min-width: 1200px) {
-
 }
 
 /* testimonials section */
 
 .testimonials-section {
   width: 100%;
-  height: 420px;
+  padding-bottom: 10px;
   float: left;
   position: relative;
   background-color: #ffffff;
@@ -389,21 +432,32 @@ p {
 }
 
 .testimonials-info-div {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 70%;
+  margin-left: -20px;
+  margin-right: -15px;
   display: inline-block;
 }
 
-.testimonials-arrow-div {
+.testimonials-arrow-div-left {
+  float: left;
+  position: relative;
+  padding-left: 15px;
+}
+
+.testimonials-arrow-div-right {
   float: right;
-  clear: both;
-  display: inline-block;
+  position: relative;
+  padding-right: 15px;
 }
 
 #testimonial-photo {
   width: 125px;
   margin: 40px auto 20px;
+}
+
+#testimonial-arrow-left {
+  margin-top: 191px;
+  width: 14px;
 }
 
 #testimonial-arrow {
@@ -423,10 +477,11 @@ p {
 @media (min-width: 768px) {
   .testimonials-section {
     height: 360px;
+    margin-top: -5px;
   }
   .testimonials-info-div {
     text-align: left;
-    margin-top: 90px;
+    margin-top: 87px;
   }
   #testimonial-photo {
     width: 180px;
@@ -436,17 +491,24 @@ p {
   #five-star-rating {
     margin-top: 12px;
   }
-  .testimonials-section p {
-    font-size: 18px;
-    line-height: 30px;
-  }
   #testimonial-arrow {
     margin-top: 155px;
-    margin-right: 80px;
+    margin-right: 60px;
+    width: 20px;
+  }
+  #testimonial-arrow-left {
+    margin-top: 155px;
+    margin-left: 60px;
     width: 20px;
   }
 }
 
+@media (min-width: 950px) {
+  .testimonials-section p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 
 /* footer */
 
