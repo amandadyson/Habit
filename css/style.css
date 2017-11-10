@@ -280,9 +280,7 @@ p {
 
 @media (min-width: 768px) {
   /*
-
   timeline circle & line do not stay centered using %s
-
   .stats-section:before {
     content: " ";
     position: absolute;
@@ -467,6 +465,8 @@ p {
 
 #five-star-rating {
   width: 160px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .testimonials-section p {
@@ -490,6 +490,7 @@ p {
   }
   #five-star-rating {
     margin-top: 12px;
+    margin: 0 0;
   }
   #testimonial-arrow {
     margin-top: 155px;
