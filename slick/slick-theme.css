@@ -5,6 +5,10 @@
     background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
+.slick-list {
+      height: 400px;
+}
+
 /* Icons */
 @font-face
 {
@@ -70,8 +74,9 @@
     font-size: 20px;
     line-height: 1;
 
+
     opacity: .75;
-    color: black;
+    color: #685C79;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,12 +84,24 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -40px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -40px;
     left: auto;
+}
+@media (min-width: 768px) {
+  .slick-prev
+  {
+      left: -55px;
+      top: 90px;
+  }
+  .slick-next
+  {
+      right: -55px;
+      top: 90px;
+  }
 }
 .slick-prev:before
 {
@@ -97,12 +114,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: -40px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -40px;
 }
 .slick-next:before
 {
