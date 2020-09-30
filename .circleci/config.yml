@@ -13,3 +13,6 @@ workflows:
     # Run the welcome/run job in its own container
     jobs: 
       - welcome/run
+     build:
+       macos:
+        xcode: 11.3.0
