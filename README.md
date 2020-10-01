@@ -23,7 +23,7 @@ The completed Habit prototype has a simple, easy-to-navigate interface that is c
 <br>
 <br>
 <br>
-<b>[READ FULL CASE STUDY](http://amandadyson.com/habit.html)</b>
+<b>[READ FULL CASE STUDY](https://amandadyson.com/habit.html)</b>
 
 <b>[VIEW MARKETING SITE](https://amandadyson.github.io/Habit/)</b>
 
