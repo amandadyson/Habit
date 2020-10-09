@@ -1,27 +1,7 @@
-# Use the latest 2.1 version of CircleCI pipeline processing engine, see https://circleci.com/docs/2.0/configuration-reference/
-version: 2.1 
-
-# Use a package of configuration called an orb, see https://circleci.com/docs/2.0/orb-intro/  
+version: 2.1
 orbs:
-  win: circleci/windows@2.3.0
-
-jobs:
-  build:
-    executor:
-      name: win/default
-      size: "medium" # can be "medium", "large", "xlarge", "2xlarge"
-    steps:
-      - run: Write-Host 'Hello, Windows'
-  test:
-    executor:
-      name: win/default
-      size: "medium" # can be "medium", "large", "xlarge", "2xlarge"
-    steps:
-      - run: Write-Host 'Hello, Windows'
-
+  node: circleci/node@3.0.0
 workflows:
-  version: 2
-  build_and_test:
+  node-tests:
     jobs:
-      - build
-      - test
+      - node/test
